@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	
+  	<!-- Kebutuhan halaman -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	
+    	<!-- Meta khusus hp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- stylenya disini -->
+	<link rel="stylesheet" href="css/footer.css">
+<style>
+body,
+html {
+   height: 100vh;
+   margin: 0;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+   box-sizing: border-box;
+}
+.backgroundImage {
+   background-image: url("image/tommy.jpg");
+   filter: blur(10px);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.transparentText {
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
+   border: 3px solid #f1f1f1;
+   position: absolute;
+   top: 40%;
+   left: 30%;
+   width: 50%;
+   padding: 20px;
+   text-align: center;
+}
+body {
+  margin: 0;
+  font-family: calibri;
+}
+
+/* header */
+
+.logo {
+  color: black;
+  display: inline-lock;
+}
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.header li a {
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	}
+.header li a:hover
+.header .menu-btn:hover {
+	background-color: #f4f4f4;
+	}
+.header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	}
+	
+	/* menu */
+	
+	.header .menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+		}
+		
+/* menu icon */
+
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+.header .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+	top: -5px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 22px 14px;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header .menu-icon {
+		display: none;
+	}
+}
+</style>
+</head>
+<!-- header -->
+  	    <header class="header">
+		<div class="container">
+			<a href="index.html" class="logo">TomSITE</a>
+			<input class="menu-btn" type="checkbox" id="menu-btn">
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="hd.html" class="active">Home</a></li>
+				<li><a href="profile.html">My Profile</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="http://wa.me/6285741155589" title="Contact us">Contact Me</a></li>
+			</ul>
+		</div>
+	</header>
+	
+<body>
+<div class="backgroundImage"></div>
+<div class="transparentText">
+<h1>WELCOME</h1>
+<h1></h1>
+</div>
+<!-- footer atau bagian bawah -->
+ <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="hd.html">Home</a></li>
+                <li class="list-inline-item"><a href="profile.html">Profile</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">©TomSite|2022</p>
+        </footer>
+    </div>
+</body>
+</html>
