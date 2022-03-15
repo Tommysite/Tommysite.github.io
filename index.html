@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+	<!-- stylenya gabung aja -->
+ <style>
+ 	/* img circle/lingkaran nya */
+ img {
+ border-radius: 50%;
+}
+/* teks nama dan bio di bawah foto profil */
+.display-4 {
+ text-align: center;
+}
+.display-3 {
+ text-align: center;
+ }
+ /* background */
+ body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Small Screens */
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 0;
+  
+      }
+</style>
+ </head>
+ 
+ <body>
+<p align="center"><img src="image/logo.jpg" width="200px" height="200px"></p>
+<h1 class="display-4">Tommy Hermawan</h1>
+<h3 class="display-3">Hai saya Tommy hobi saya makan,minum,tidur.</h3>
+ <header class="showcase">
+    <div class="content">
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container grid-3 center">
+      <div>
+        <h3>My Media Social</h3>
+      </div>
+      <div>
+        <a href="http://wa.me/6285741155589" class="fab fa-whatsapp"></a>
+    <h3>My Contact Whatsapp</h3>
+      </div>
+      <a href="https://www.instagram.com/hellotomtomx/" class="fab fa-instagram"></a>
+    <h3>My Instagram</h3>
+      <div>
+  <a href="#" class="fab fa-github"></a>
+      <h3>My GitHub</h3>
+    </div>
+    </section>
+
+  <!-- About -->
+  <section class="about bg-light">
+    <div class="container">
+      <div class="grid-2">
+        <div class="center">
+          <p align="center"><img src="image/pogo.jpg" width="200px" height="200px"></p>
+        </div>
+        <div>
+          <h3 align="center">Tentang Saya</h3>
+          <p align="center">Hai saya Tommy saya adalah web developer newbie, dan saya sedang belajar html/css. Saya tinggal di indonesia tepatnya di jawa tengah, umur saya 19thn, saya berpendidikan di SMA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="center bg-dark">
+    <p>copyright©tommysite|2022</p>
+  </footer>
+</body>
+</html>
